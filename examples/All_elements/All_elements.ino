@@ -17,7 +17,7 @@ void setup() {
   ds.Window_Frame_Thickness = 2;
   
   ds.Button_Frame_Color = lightBlack2;
-  ds.Button_Color = gray;
+  ds.Button_Color = gray2;
   ds.Button_Selected_Color = lightBlack3;
   ds.Button_Text_Color = black;
  
@@ -67,7 +67,7 @@ LCD_Progress_bar(50, 430, 185, 205, 0, 10, 7, Horisontal);
 LCD_Progress_bar(50, 430, 210, 230, 0, 10, 8, Horisontal);
 LCD_Progress_bar(50, 430, 235, 255, 0, 10, 9, Horisontal);
 LCD_Progress_bar(50, 430, 260, 280, 0, 10, 10, Horisontal);
-delay(10000);
+delay(5000);
 LCD_FramePanel();
 LCD_Label(30, 290, "Gradient Progress bar >>>");
 
@@ -82,13 +82,19 @@ LCD_Progress_bar_gradient(50, 430, 185, 205, 0, 10, 7, Horisontal);
 LCD_Progress_bar_gradient(50, 430, 210, 230, 0, 10, 8, Horisontal);
 LCD_Progress_bar_gradient(50, 430, 235, 255, 0, 10, 9, Horisontal);
 LCD_Progress_bar_gradient(50, 430, 260, 280, 0, 10, 10, Horisontal);
-delay(10000);
+delay(5000);
 
 LCD_FramePanel();
 LCD_Label(30, 5, "Textbox >>>");
 LCD_TextBox(30, 130, 40, "Text, Num");
-delay(10000);
-
+delay(5000);
+LCD_Form("Form1 >>>");
+LCD_Button(20, 100, 40, 80, "Open list");
+delay(5000);
+LCD_Gradient_Form_A("Gradient Form A");
+delay(5000);
+LCD_Gradient_Form_B("Gradient Form B");
+delay(5000);
 
 
 }

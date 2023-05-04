@@ -1195,7 +1195,22 @@ void LCD_TextBox(uint16 x1, uint16 x2, uint16 y1, char Text[])
 {
     TextBox(x1, x2, y1, WindowFrameThickness, WindowFrameColor, WindowColor, WindowTextColor, Text);
 }
-
+void LCD_Form(char FormName[])
+{
+   Form(1, DispWidth, 1, DispHeight, 25, WindowFrameThickness, WindowFrameColor, WindowBarColor, WindowColor, WindowTextColor, FormName);
+}
+void LCD_Button(uint16 x1, uint16 x2, uint16 y1, uint16 y2, char Text[])
+{
+   Button(x1, x2, y1, y2, WindowFrameThickness, ButtonFrameColor, ButtonColor, Text, ButtonTextColor);
+}
+void LCD_Gradient_Form_A(char FormName[])
+{
+   GradientFormA(1, DispWidth, 1, DispHeight, 25, WindowFrameThickness, WindowFrameColor, WindowBarHColor, WindowBarLColor, WindowColor, WindowTextColor, FormName);
+}
+void LCD_Gradient_Form_B(char FormName[])
+{
+   GradientFormB(1, DispWidth, 1, DispHeight, 25, WindowFrameThickness, WindowFrameColor, WindowBarHColor, WindowBarLColor, WindowColor, WindowTextColor, FormName);
+}
 
 
 
